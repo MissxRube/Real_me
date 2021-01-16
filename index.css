@@ -1,0 +1,180 @@
+
+.decoration_p{
+  
+    font-family: 'Allura', cursive;
+    -webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-lr ;
+    color: #AF9D70;
+
+ 
+    
+
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+    .decoration_p {
+        font-size: calc(9rem + (1.3-1.2) * ((100vw - 600px) / (1200 - 600)));
+        color: #AF9D70;
+    }
+}
+@media (min-width: 1200px) {
+    .decoration_p {
+        font-size: 9rem;
+        color: #AF9D70;
+    }
+}
+
+@media (max-width: 992px) {
+    .ellipsis {
+        overflow:hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        white-space: normal;
+        font-size:1rem !important;
+    }
+}
+
+
+.newlife-padding{
+    padding-top: 10%;
+   
+
+}
+.arrow{
+    width: 5%;
+    height: 20%;
+    position: absolute;
+    left: 45%;
+    top:62%;
+    filter:invert(1);
+    
+  
+
+}
+#arrow{
+    animation-iteration-count: infinite;
+    animation-duration:1s;
+}
+.decoration-a{
+    font-family: 'Allura', cursive;
+    font-size: 5rem;
+
+}
+
+.filter-a{
+    
+
+    filter:contrast(2);
+    overflow: hidden;
+    display: inline-block;
+}
+
+.filter-a .filter-img{
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+}
+
+.filter-a:hover{
+    filter:invert(1);
+    
+}
+.filter-img:hover{
+    transform: scale(1.5,1.5);
+
+}
+.filter-a .filter-p{
+    display: inline;
+    color: aliceblue;
+    width: 50px;
+    text-align: center;
+    height: 196px;
+    transition: all 0.5s;
+    opacity: 0;
+    /* text-shadow: 2px 2px 4px black;
+    letter-spacing: 1px; */
+    margin-top: -230px;
+    padding-left:45% ;
+
+}
+.filter-a:hover .filter-p{
+    position: relative;
+    z-index:99;
+    opacity: 1;
+   
+}
+
+/* swiper試做滿版 */
+
+
+/* .swiper-container {
+    width: 80%;
+    height: 80%;
+    background: #000;
+  }
+
+  .swiper-slide {
+    font-size: 18px;
+    color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 40px 60px;
+  }
+
+  .parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .swiper-slide .title {
+    font-size: 41px;
+    font-weight: 300;
+  }
+
+  .swiper-slide .subtitle {
+    font-size: 21px;
+  }
+
+  .swiper-slide .text {
+    font-size: 14px;
+    max-width: 400px;
+    line-height: 1.3;
+  } */
+/* swiper試做短版 */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  /* 如果boostrap無法滿足置中所以自己做 */
+  .swiper-pagination-bullet{
+      background:#fff !important;
+  }

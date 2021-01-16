@@ -1,0 +1,53 @@
+*{
+        padding: 0;
+        margin:0;
+        border:none;
+}
+a{
+        color: black;
+
+
+}
+p{
+        
+
+}
+a:hover{
+
+        color: gold;
+        text-shadow: 2px 2px 4px white;
+        text-decoration: none;
+}
+.btn1,.btn2,.btn3,.btn4{
+        background-image:none;
+        transition:all 2s;
+        border-radius: 25px;
+
+}
+
+.btn1:hover{
+        background-image:radial-gradient( rgba(247, 244, 237, 1), rgba(233, 227, 207, 0.1)),url(../../storage/index/04.png) ;
+        background-position:bottom;
+}
+
+.btn2:hover{
+        background-image:radial-gradient( rgba(247, 244, 237, 1), rgba(233, 227, 207, 0.1)),url(../../storage/index/01.png) ;
+        background-position:bottom;
+}
+.btn3:hover{
+        background-image:radial-gradient( rgba(247, 244, 237, 1), rgba(233, 227, 207, 0.1)),url(../../storage/index/03.png) ;
+        background-position:bottom;
+}
+.btn4:hover{
+        background-image:radial-gradient( rgba(247, 244, 237, 1),rgba(233, 227, 207, 0.1)),url(../../storage/index/02.png) ;
+        background-position:bottom;
+}
+
+#top{
+        position: fixed;
+        right: 0%;
+        bottom: 0%;
+        z-index: 9999;
+        
+    
+}

@@ -1,0 +1,274 @@
+body {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: microsoft jhenghei;
+    z-index: 99;
+}
+nav {
+    background-color: white;
+
+    /* background-color: rgba(	255, 245, 238,.6); */
+    /* 用動畫做過度 */
+    transition: all 0.5s;
+}
+
+.nav-link {
+    color: black;
+}
+.nav-link:hover {
+    color: gold;
+}
+
+#logo {
+    animation: showAn 1s;
+    animation-delay: 1s;
+
+    font-family: "Dancing Script", cursive;
+}
+
+@font-face {
+    src: url("../DancingScript-SemiBold.ttf");
+    font-family: "Dancing Script", cursive;
+}
+.logostyle {
+    font-size: 2rem;
+    font-size: 2rem;
+    padding-left: 45% !important;
+}
+.bar-img {
+    background-color: white;
+}
+
+/* 方法二 */
+@keyframes showAn {
+    0% {
+        transform: scale(0.2, 0.2);
+        opacity: 0;
+    }
+    45% {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+    /* 中間10是停留時間 */
+
+    55% {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1, 1);
+        opacity: 0;
+    }
+}
+
+.bg-image {
+    /* ../../image/bg2.gif"http://localhost/realme/storage/app/public/index/ */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+        url(../../storage/index/bg2.gif);
+    /* D:\xampp\htdocs\realme3\public\storage\index\bg2.gif */
+
+    background-attachment: fixed;
+}
+.bg-transfer {
+    background-color: rgba(240, 231, 231, 0.7);
+}
+.top-decoration {
+    width: 100%;
+    /* background-color: wheat; */
+    /* border-bottom: 1px solid black; */
+    color: wheat;
+    font-size: large;
+    border: 2px solid wheat;
+}
+.top-decoration:hover {
+    animation: showbtn 5s;
+    color: gold;
+    border: 2px solid gold !important;
+    box-shadow: 2px 2px 5px white;
+}
+@keyframes showbtn {
+    0% {
+        border: 2px solid transparent;
+    }
+
+    100% {
+        border: 2px solid black;
+        box-shadow: 2px 2px 5px black;
+    }
+}
+
+.product-img {
+    z-index: -99;
+}
+.circle {
+    background-color: #000;
+    height: 2px;
+    width: 2px;
+    border-radius: 50%;
+}
+.product-padding {
+    padding-top: 70%;
+}
+
+#movefont {
+    position: absolute;
+    top: 150%;
+    left: 0%;
+    z-index: 98;
+    text-shadow: 2px 3px 5px black;
+}
+.product-info {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transition: all 1s;
+}
+.product-box {
+    position: relative;
+    transition: all 1s;
+}
+
+.product-img {
+    filter: brightness(0.5);
+    transition: all 1s;
+}
+/*
+.product-img:hover{
+
+       filter:saturate(0.9);
+       transform: scale(1.2,1.2);
+       color: gold;
+
+
+} */
+.product-box a {
+    color: wheat !important;
+}
+.product-box:hover img {
+    filter: blur(0px);
+    transform: scale(1.2, 1.2);
+    box-shadow: 2px 2px 5px black;
+}
+.product-box:hover div {
+    background-color: #333;
+    text-shadow: 3px 2px 2px black !important;
+    /* filter:blur(3px);
+    transition: all 1s; */
+    top: 90%;
+    left: -10%;
+}
+.bg-footer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)),
+        url(../../storage/index/footer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.text-gold {
+    color: rgb(219, 197, 73);
+}
+
+.socialIcon {
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    color: rgb(165, 148, 54);
+    border: 1px solid rgb(219, 197, 73);
+    border-radius: 50px;
+    line-height: 45px;
+    margin: 30px 5px;
+}
+
+.bg-infode {
+    background-image: url(../../storage/index/info1.jpg) !important;
+}
+.bg-infode1 {
+    background-image: url(https://www.dior.com/couture/var/dior/storage/images/horizon/fragrance/womens-fragrance/discover-joy-by-dior2/la-nouvelle-eau-de-parfum-intense-slider-1-edp-intense/image-2/17858205-1-fre-FR/image-2_1440_1200.jpg) !important;
+    background-position: center;
+    background-size: cover;
+}
+.bg-infode2 {
+    background-image: url(https://www.dior.com/couture/var/dior/storage/images/18551119/26-chi-TW/image-52_1440_1200.jpg) !important;
+    background-position: center;
+    background-size: cover;
+}
+.bg-infode3 {
+    background-image: url(https://www.dior.com/couture/var/dior/storage/images/horizon/products/fp-pcd/folder-fragrance/folder-sauvage/y0998004-sauvage-parfum/strate2_shifted_images/strate02_img03/20353740-3-eng-GB/strate02_img03_1440_1200.jpg) !important;
+    background-position: center;
+    background-size: cover;
+}
+#close {
+    background-color: transparent !important ;
+}
+.infobox {
+    z-index: 99;
+}
+#infobtn {
+    border-radius: 25px;
+}
+
+.text-h1 {
+    font-size: calc(20px + 8vh);
+    line-height: calc(20px + 6vh);
+
+    text-shadow: 0 0 5px #faf5cb, 0 0 15px #faf5cb, 0 0 20px#faf5cb,
+        0 0 40px#e7db71, 0 0 60px #ffa500, 0 0 10px #e7da63, 0 0 98px #ffa500;
+    color: #faf5cb;
+    font-family: "Sacramento", cursive;
+    text-align: center;
+    animation: blink 12s infinite;
+    -webkit-animation: blink 12s infinite;
+}
+
+@-webkit-keyframes blink {
+    20%,
+    24%,
+    55% {
+        color: rgb(233, 226, 226);
+        text-shadow: 0 0 5px#ebe2d2, 0 0 15px #ebe2d2, 0 0 20px#ebe2d2,
+            0 0 40px #ebe2d2, 0 0 60px #ffffff, 0 0 10px #ebe2d2,
+            0 0 98px #fffdfd;
+    }
+
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+        text-shadow: 0 0 5px #ffe600, 0 0 15px #ffe600, 0 0 20px #ffe600,
+            0 0 40px #ffe600, 0 0 60px #ff8d00, 0 0 10px #ffd900,
+            0 0 98px #ff8d00;
+        color: #fff6a9;
+    }
+}
+
+@keyframes blink {
+    20%,
+    24%,
+    55% {
+        color: rgb(233, 226, 226);
+        text-shadow: 0 0 5px#ebe2d2, 0 0 15px #ebe2d2, 0 0 20px#ebe2d2,
+            0 0 40px #ebe2d2, 0 0 60px #ffffff, 0 0 10px #ebe2d2,
+            0 0 98px #fffdfd;
+    }
+
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+        text-shadow: 0 0 5px #ffe600, 0 0 15px #ffe600, 0 0 20px #ffe600,
+            0 0 40px #ffe600, 0 0 60px #ff8d00, 0 0 10px #ffd900,
+            0 0 98px #ff8d00;
+        color: #fff6a9;
+    }
+}

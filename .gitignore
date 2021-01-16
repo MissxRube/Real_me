@@ -1,0 +1,20 @@
+/node_modules
+/public/hot
+/public/storage
+# /storage/*.key
+/storage/framework/*
+# // 项目框架缓存
+/storage/logs/*
+# // 日志
+/vendor
+# // 该目录下包含Laravel源代码和第三方依赖包
+.env
+# // 本地环境配置
+.env.backup
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+**/.DS_Store
+# //.DS_Store 是 macOS 產生的特殊檔案
